@@ -1,0 +1,6 @@
+A minimal real time multi user chatting application using PHP, AJAX and MySQL.
+
+core.php deals with database connections
+init.php brings everything together
+index.php is the landing page
+
