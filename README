@@ -1,6 +1,10 @@
 A minimal real time multi user chatting application using PHP, AJAX and MySQL.
 
+Basic structure
+
 core.php deals with database connections
+chat.php pulls data in and push data in database, extends from core.php
 init.php brings everything together
-index.php is the landing page
+index.php is the landing page which will be included in any page which needs to access the database, chat class and to retrieve session data (start session)
+defining the logged in variable
 
