@@ -1,12 +1,17 @@
 <?php
 session_start();
 
+
 $_SESSION['user'] = (isset($_GET['user']) === true) ? (int)$_GET['user'] : 0;
 
-echo $_SESSION['user'] ;	
+require './core/classes/chat.php';
+//echo $_SESSION['user'] ;	
+$chat= new Chat();
+print_r($chat->fetchMessage());
 
 
 ?>
+
 
 <!DOCTYPE html>
 <html>
