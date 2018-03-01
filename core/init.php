@@ -3,6 +3,6 @@
 start_session();
 define('LOGGED_IN',true);
 
-require 'classes/chat.php';
-require 'classes/core.php';
+require 'classes/Chat.php';
+require 'classes/Core.php';
 

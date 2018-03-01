@@ -4,10 +4,12 @@ session_start();
 
 $_SESSION['user'] = (isset($_GET['user']) === true) ? (int)$_GET['user'] : 0;
 
-require './core/classes/chat.php';
+// require 'core/classes/Core.php';
+
+require 'core/classes/Chat.php';
 //echo $_SESSION['user'] ;	
 $chat= new Chat();
-print_r($chat->fetchMessage());
+echo '<pre>', print_r($chat->fetchMessage()), '</pre>';
 
 
 ?>
@@ -19,7 +21,7 @@ print_r($chat->fetchMessage());
 	<title>
 		AJAX Chat
 	</title>
-	<link rel="stylesheet" type = "text/css" href="./css/styles.css">
+	<link rel="stylesheet" type = "text/css" href="css/styles.css">
 </head>
 <body>
     

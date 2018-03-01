@@ -10,8 +10,8 @@ class Chat extends Core{
 					     `users`.`user_id`
 				FROM     `chat`
 				JOIN     `users`
-				ON	     `chat`.`user_id`=`user`.`user_id`
-				ORDER BY `chat`.`timespamp`
+				ON	     `chat`.`user_id` = `users`.`user_id`
+				ORDER BY `chat`.`timestamp`
 				DESC
 
 			");

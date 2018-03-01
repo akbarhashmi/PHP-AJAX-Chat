@@ -7,7 +7,7 @@ class Core{
 	private $rows;
 
 	public function __construct(){
-		$this->db= new mysqli('localhost','root','root','chatdb ');
+		$this->db= new mysqli('localhost','root','root','chatdb');
 
 
 	}
@@ -19,7 +19,7 @@ class Core{
 
 	public function rows(){ //loops through rows returned fro the query
 		for($x=1; $x <= $this->db->affected_rows; $x++){
-			$this->rows[] = $this->result>fetch_assoc();
+			$this->rows[] = $this->result->fetch_assoc();
 		}
 
 		return $this->rows;
