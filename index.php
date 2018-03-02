@@ -9,7 +9,7 @@ $_SESSION['user'] = (isset($_GET['user']) === true) ? (int)$_GET['user'] : 0;
 require 'core/classes/Chat.php';
 //echo $_SESSION['user'] ;	
 $chat= new Chat();
-echo '<pre>', print_r($chat->fetchMessage()), '</pre>';
+echo '<pre>', print_r($chat->fetchMessages()), '</pre>';  //pre tags organise the chats
 
 
 ?>

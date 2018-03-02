@@ -2,7 +2,7 @@
 require 'Core.php';
 class Chat extends Core{
 
-	public function fetchMessage(){
+	public function fetchMessages(){
 
 		$this->query("
 				SELECT   `chat`.`message`,
@@ -18,7 +18,7 @@ class Chat extends Core{
 		return $this->rows();
 	}
 
-	public function throwMessage($user_id, $message){ //insert into db
+	public function throwMessages($user_id, $message){ //insert into db
 
 	}
 }
