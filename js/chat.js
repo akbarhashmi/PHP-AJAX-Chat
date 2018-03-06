@@ -1,6 +1,6 @@
 var chat = {} //global object
 
-chat.fetchMessage = () {
+chat.fetchMessage = function () {
 
 	//AJAX request to chat.php file, which will return the data
 
@@ -16,4 +16,4 @@ chat.fetchMessage = () {
 	});
 }
 
-chat.interval = setInterval(chat.fetchMessage, 2000);
+chat.interval = setInterval(chat.fetchMessage, 5000);
