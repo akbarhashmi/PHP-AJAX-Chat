@@ -1,8 +1,8 @@
 <?php
 
-start_session();
+// session_start();
 define('LOGGED_IN',true);
 
-require 'classes/Chat.php';
-require 'classes/Core.php';
+require_once 'classes/Chat.php';
+require_once 'classes/Core.php';
 
