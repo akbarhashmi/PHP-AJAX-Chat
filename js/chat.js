@@ -16,4 +16,14 @@ chat.fetchMessage = function () {
 	});
 }
 
-chat.interval = setInterval(chat.fetchMessage, 5000);
+chat.entry = $('.chat.entry'); //selector for entry text area
+//bind key down event handler
+chat.entry = ('keydown', function(e) {
+	if(e.keyCode === 13 && e.shiftKey === false){
+
+		e.preventDefault();
+	}
+});
+
+chat.fetchMessage(); //fetch currently stored messages
+chat.interval = setInterval(chat.fetchMessage, 25000); // fetch new messages
